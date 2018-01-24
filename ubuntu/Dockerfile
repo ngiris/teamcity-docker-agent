@@ -35,6 +35,8 @@ RUN apt-get update && \
             zlib1g \
         && rm -rf /var/lib/apt/lists/* && \
     \
+    apt-get install -y awscli && \
+    \
     curl -SL https://dotnetcli.blob.core.windows.net/dotnet/Sdk/2.1.4/dotnet-sdk-2.1.4-linux-x64.tar.gz --output dotnet.tar.gz \
         && mkdir -p /usr/share/dotnet \
         && tar -zxf dotnet.tar.gz -C /usr/share/dotnet \
