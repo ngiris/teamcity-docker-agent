@@ -41,7 +41,7 @@ RUN apt-get update && \
     \
     curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl && \
     chmod +x ./kubectl && \
-    mv ./kubectl /usr/local/bin/kubectl \
+    mv ./kubectl /usr/local/bin/kubectl && \
     \
     curl -SL https://dotnetcli.blob.core.windows.net/dotnet/Sdk/2.1.4/dotnet-sdk-2.1.4-linux-x64.tar.gz --output dotnet.tar.gz \
         && mkdir -p /usr/share/dotnet \
